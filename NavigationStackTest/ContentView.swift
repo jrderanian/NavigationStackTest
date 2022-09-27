@@ -46,7 +46,7 @@ struct ContentView: View {
                 }
                 
             }
-            /*
+            
             .refreshable {
                 listData = [
                     ToDoItem(task: "Order dinner", imageName: "dollarsign.circle.fill"),
@@ -54,7 +54,7 @@ struct ContentView: View {
                     ToDoItem(task: "Sell the kids", imageName: "person.2.fill")
                 ]
             }
-             */
+            
             //.navigationBarTitle(Text("To Do List"))
             .navigationDestination(for: String.self) { task in
                 Text("Selected task = \(task)")
